@@ -1,0 +1,19 @@
+ server:
+  type: simple
+  applicationContextPath: /
+  adminContextPath: /admin
+  connector:
+      port: 4000
+      type: http
+
+
+ dbName: AfferoLab
+ collName: Estoque
+ host: mongodb+srv://root:afferolab@cluster0-reqhs.mongodb.net/AfferoLab
+ port: 27017
+  
+ assets:
+  mappings:
+    /assets: /
+  overrides:
+    /: /react-app/build
